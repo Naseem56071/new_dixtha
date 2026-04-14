@@ -18427,4 +18427,8 @@ a.viewall-btn {
   font-size: 22px;
   font-weight: 600;
 }
+a.viewall-btn:hover{
+  background: #074c7d;
+  color: #fff;
+}
 
