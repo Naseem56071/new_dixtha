@@ -10056,6 +10056,8 @@ blockquote.vs-quote .quote-author {
   transform: unset;
 }
 
+
+
 .hero-layout2 .listing-style1 .nice-select:after {
   top: unset;
   bottom: -32%;
@@ -18425,3 +18427,4 @@ a.viewall-btn {
   font-size: 22px;
   font-weight: 600;
 }
+

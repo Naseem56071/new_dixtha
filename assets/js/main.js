@@ -236,21 +236,17 @@ const scrollToTopBtn = ".scrollToTop";
 
 function stickyMenu($targetMenu, $toggleClass, $parentClass) {
   let st = $(window).scrollTop();
-  let height = $targetMenu.css("height");
+  let height = $targetMenu.outerHeight();
+
   $targetMenu.parent().css("min-height", height);
 
-  if (st > 800) {
+  if (st > 0) {
     $targetMenu.parent().addClass($parentClass);
-    if (st > lastScrollTop) {
-      $targetMenu.removeClass($toggleClass);
-    } else {
-      $targetMenu.addClass($toggleClass);
-    }
+    $targetMenu.addClass($toggleClass);
   } else {
-    $targetMenu.parent().css("min-height", "").removeClass($parentClass);
+    $targetMenu.parent().removeClass($parentClass);
     $targetMenu.removeClass($toggleClass);
   }
-  lastScrollTop = st;
 }
 
 $(window).on("scroll", function () {
