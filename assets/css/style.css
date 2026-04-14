@@ -7108,6 +7108,7 @@ a.text-theme:hover,
 }
 
 .copyright-text {
+  text-align: center;
   margin: 0;
   color: var(--text-color);
   font-weight: 500;
