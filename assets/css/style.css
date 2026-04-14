@@ -11930,7 +11930,7 @@ blockquote.vs-quote .quote-author {
   z-index: 2;
   color: var(--title-color);
   border-radius: 6px;
-  background-color: var(--body-color);
+  background-color: var(--white-color);
   margin-bottom: 0;
 }
 
@@ -11944,7 +11944,7 @@ blockquote.vs-quote .quote-author {
 
 .nice-select .list .option:hover {
   color: var(--white-color);
-  background-color: var(--secondary-color);
+  background-color: var(--theme-color);
 }
 
 .nice-select::after {
