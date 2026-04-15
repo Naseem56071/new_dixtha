@@ -127,6 +127,9 @@ body {
     font-size: 14px;
     line-height: 24px;
   }
+   .svc-grid {
+    grid-template-columns: 1fr;
+  }
 
   a.viewall-btn {
     text-align: center;
@@ -272,6 +275,10 @@ p {
 @media (max-width: 767px) {
   p {
     line-height: 1.73;
+  }
+
+  .svc-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -18181,6 +18188,7 @@ span.select2-selection.select2-selection--single:focus {
 .svc-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0px 15px;
   gap: 18px;
   max-width: 1200px;
   margin: 0 auto;
@@ -18433,7 +18441,7 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 480px) {
   .svc-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -18485,35 +18493,39 @@ a.viewall-btn:hover {
   left: -100%;
   width: 200%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.6),
-    transparent
-  );
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
   animation: waveMove 2s infinite;
 }
 
 /* Animation */
 @keyframes waveMove {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 /*footer social media */
 .footer-social-media {
-    display: flex;
-   
-    align-items: center;
-    gap: 18px;
-   
+  display: flex;
+
+  align-items: center;
+  gap: 18px;
+
 }
 
 .footer-social-media a i {
-    font-size: 25px;
-    color: #074c7d;
+  font-size: 25px;
+  color: #074c7d;
 }
-.footer-social-media a  :hover{
+
+.footer-social-media a :hover {
   color: #ea6e12;
   border-radius: 50px;
 }
