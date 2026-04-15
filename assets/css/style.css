@@ -5556,7 +5556,7 @@ a.text-theme:hover,
 
 .main-menu>ul>li>a,
 .menu-style2>ul>li>a {
-  padding: 35px 34px 35px 24px;
+  padding: 35px 15px 35px 15px;
   border-top: 3px solid transparent;
   transition: all 0.5s ease;
   background: transparent;
@@ -18529,3 +18529,4 @@ a.viewall-btn:hover {
   color: #ea6e12;
   border-radius: 50px;
 }
+
