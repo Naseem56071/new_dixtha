@@ -1156,7 +1156,7 @@ input {
   padding-right: 45px;
   border: 1px solid var(--border-color);
   color: var(--body-color);
-  background-color: var(--white-color);
+  background-color: var(--theme-color);
   border-radius: 9999px;
   border-radius: 0;
   font-size: 14px;
@@ -6364,7 +6364,8 @@ a.text-theme:hover,
 }
 
 .header-links li a {
-  color: var(--secondary-color);
+  font-weight: 700;
+  color: #f7bd5d;
   transition: all 0.5s ease;
   border-bottom: 1px solid transparent;
   display: inline-block;
@@ -6662,7 +6663,7 @@ a.text-theme:hover,
   background-color: var(--title-color);
 } */
 .header-layout2 .header-top {
-  background-color: var(--theme-color);
+  background-color: #0d324c;
 }
 
 .header-layout2 .header-buttons .vs-icon {
@@ -9720,7 +9721,7 @@ blockquote.vs-quote .quote-author {
 
 /*------------------- 4.8. Hero Area  -------------------*/
 .hero-layout1 {
-  background-color: var(--theme-color);
+
   position: relative;
   z-index: 1;
 }
@@ -9772,12 +9773,24 @@ blockquote.vs-quote .quote-author {
 
 /* ── Hero Content Center ── */
 .vs-hero .hero-content {
+  position: relative;
+  top: 55px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
+
+.hero-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(72, 141, 190, 0.85) 0%, rgba(15, 75, 118, 0.6) 30%, rgba(0, 0, 0, 0.55) 55%, rgba(234, 95, 1, 0.50) 80%, rgba(148, 87, 46, 0.75) 50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 
 /* ── Subtitle ── */
 .vs-hero .hero-subtitle {
@@ -9792,7 +9805,7 @@ blockquote.vs-quote .quote-author {
 
 /* ── Title - Centered, controlled width ── */
 .vs-hero .hero-title {
-  color: var(--white-color);
+  color: #ea7c2b;
   font-weight: 700;
   font-size: 48px;
   line-height: 120%;
@@ -9882,6 +9895,16 @@ blockquote.vs-quote .quote-author {
     white-space: normal !important;
     word-break: normal !important;
     max-width: 100% !important;
+  }
+
+  .jbs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-layout1 {
+    background: var(--theme-color);
+    position: relative;
+    z-index: 1;
   }
 
   .vs-hero .hero-text {
@@ -10240,6 +10263,7 @@ blockquote.vs-quote .quote-author {
 
 .form-style2 .form-group .vs-btn {
   width: 100%;
+  margin-top: 20px;
   padding: 12px 36px;
 }
 
@@ -14907,11 +14931,11 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .listing-style1 .listing-body {
-  padding: 50px;
+  padding: 10px;
   box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.17);
-  border-radius: 10px 0 10px 10px;
+
   position: relative;
   background-color: var(--white-color);
 }
@@ -17110,85 +17134,64 @@ span.select2-selection.select2-selection--single:focus {
 
 
 /* ── Hero Full Screen Fix ── */
+/* Hero Section */
 .vs-hero.hero-layout1 {
-  min-height: 500px !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  min-height: 500px;
   position: relative;
 }
 
-.vs-hero.hero-layout1::before {
+/* Each Slide */
+.hero-item {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Overlay per slide */
+.hero-item::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.55) 100%);
-  z-index: 0;
+  background: linear-gradient(135deg, rgb(255 255 255 / 85%) 0%, rgb(15 18 20 / 60%) 30%, rgb(0 0 0 / 55%) 55%, rgb(255 255 255 / 50%) 89%, rgb(165 116 82 / 75%) 50%);
+  pointer-events: none;
 }
 
-.vs-hero.hero-layout1 .container {
-  position: relative;
-  z-index: 1;
-}
-
-/* ── Listing Bar - Clean White Card ── */
-.listing-style1 {
+.hero-content {
   position: relative;
   z-index: 2;
-
+  color: #fff;
 }
 
-.listing-style1 .listing-body {
-  background: #ffffff;
-  border-radius: 0px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
-  padding: 0px 0px;
-  margin-top: 0;
-}
-
-.listing-style1 .listing-select {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.listing-style1 .select-box {
-  flex: 1;
-  min-width: 180px;
-  border-right: 1px solid #e8e8e8;
-  padding-right: 24px;
-}
-
-.listing-style1 .select-box:last-child {
-  border-right: none;
-  padding-right: 0;
-}
-
-.listing-style1 .listing-top {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #888;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
-}
-
-.listing-style1 .select-box select {
-  width: 100%;
+/* Arrows */
+.hero-prev,
+.hero-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   border: none;
-  outline: none;
-  font-size: 15px;
-  font-weight: 600;
-  color: #222;
-  background: transparent;
+  background: #fff;
   cursor: pointer;
+}
+
+.hero-prev {
+  left: 20px;
+}
+
+.hero-next {
+  right: 20px;
+}
+
+.hero-prev:hover,
+.hero-next:hover {
+  background: #ea7c2b;
+  color: #fff;
 }
 
 /* ── Mobile Responsive ── */
@@ -17234,7 +17237,7 @@ span.select2-selection.select2-selection--single:focus {
 
 /* ── Blue Mountain Sunset Shade - Matching Your Image ── */
 /* ── Static Brand Color Overlay ── */
-.vs-hero.hero-layout1::before {
+/* .vs-hero.hero-layout1::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -17246,7 +17249,7 @@ span.select2-selection.select2-selection--single:focus {
       rgba(148, 87, 46, 0.75) 50%);
   z-index: 1;
   pointer-events: none;
-}
+} */
 
 /* ── Text Shadows ── */
 .vs-hero .hero-title {
@@ -17262,6 +17265,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .vs-hero .hero-text {
+  font-size: 20px;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
   max-width: 780px;
 }
@@ -17276,7 +17280,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .vs-hero.hero-layout1 .listing-style1 {
   position: relative;
-  top: -297px;
+  top: -419px;
 
   z-index: 2;
 
@@ -17517,8 +17521,9 @@ span.select2-selection.select2-selection--single:focus {
 
 /* TEXT */
 .card-default-title {
+  padding: 0px 5px;
   font-size: 14px;
-  color: #fff;
+  color: #ea6e12;
   font-weight: 700;
   text-align: center;
 }
@@ -17601,6 +17606,16 @@ span.select2-selection.select2-selection--single:focus {
 @media (max-width: 567px) {
   .cat-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hover-btn {
+    font-size: 16px;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
   }
 
   .card-hover {
@@ -17863,7 +17878,7 @@ span.select2-selection.select2-selection--single:focus {
 .jbs-stat-num {
   font-size: 26px;
   font-weight: 700;
-  color: #ffffff;
+  color: #f9b646;
 }
 
 .jbs-stat-lbl {
@@ -17917,8 +17932,8 @@ span.select2-selection.select2-selection--single:focus {
 /* Pill Badge */
 .jbs-pill {
   position: absolute;
-  top: -10px;
-  right: 0px;
+  top: 95px;
+  right: 15px;
   font-size: 11px;
   font-weight: 600;
   padding: 4px 10px;
@@ -17940,7 +17955,7 @@ span.select2-selection.select2-selection--single:focus {
 .jbs-name {
   font-size: 16px;
   font-weight: 600;
-  color: #0f172a;
+  color: #eb7d28;
   margin: 0;
   margin-top: 6px;
 }
@@ -17962,7 +17977,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .jbs-meta-item {
   font-size: 12px;
-  color: #94a3b8;
+  color: #ff6f00;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -18010,9 +18025,7 @@ span.select2-selection.select2-selection--single:focus {
     font-size: 24px;
   }
 
-  .jbs-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+
 }
 
 @media (max-width: 420px) {
@@ -18098,6 +18111,10 @@ span.select2-selection.select2-selection--single:focus {
     min-height: 350px !important;
   }
 
+  .jbs-grid {
+    grid-template-columns: 1fr;
+  }
+
   .vs-hero.hero-layout1 .listing-style1 {
     position: relative;
     top: 0px;
@@ -18105,11 +18122,23 @@ span.select2-selection.select2-selection--single:focus {
     padding: 20px 20px;
   }
 
+  .hero-layout1 {
+    background: var(--theme-color);
+    position: relative;
+    z-index: 1;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
   .vs-hero.hero-layout1 {
     min-height: 350px !important;
+  }
+
+  .hero-layout1 {
+    background: var(--theme-color);
+    position: relative;
+    z-index: 1;
   }
 
   .vs-hero.hero-layout1 .position-relative {
@@ -18428,8 +18457,63 @@ a.viewall-btn {
   font-size: 22px;
   font-weight: 600;
 }
-a.viewall-btn:hover{
+
+a.viewall-btn:hover {
   background: #074c7d;
   color: #fff;
 }
 
+
+/*jobd hiring and urgent wave */
+
+/* Colors only different */
+.jbs-pill-hire {
+  background: #28a745;
+  color: #fff;
+}
+
+.jbs-pill-urgent {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* SAME wave animation for both */
+.jbs-pill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+  animation: waveMove 2s infinite;
+}
+
+/* Animation */
+@keyframes waveMove {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/*footer social media */
+.footer-social-media {
+    display: flex;
+   
+    align-items: center;
+    gap: 18px;
+   
+}
+
+.footer-social-media a i {
+    font-size: 25px;
+    color: #074c7d;
+}
+.footer-social-media a  :hover{
+  color: #ea6e12;
+  border-radius: 50px;
+}

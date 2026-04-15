@@ -51,6 +51,7 @@
   <link rel="stylesheet" href="assets/css/nouislider.css">
   <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -313,7 +314,7 @@
                   </li> -->
 
                   <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                   </li>
 
                   <li>
@@ -323,16 +324,21 @@
 
 
                   <li>
-                    <a href="#">Services </a>
+                    <a href="#services">Services </a>
+                  </li>
+                     <li>
+                    <a href="#categories">categories </a>
                   </li>
 
                   <li>
-                    <a href="#">Careers </a>
+                    <a href="#jobs">Careers </a>
+                  </li>
+                   <li>
+                    <a href="#Testimonials">Testimonials </a>
                   </li>
 
-                  <li>
-                    <a href="#">Blocks</a>
-                  </li>
+
+              
 
                   <!-- <li>
                     <a href="#">Listing</a>
@@ -465,128 +471,108 @@
   <!--==============================
   Hero Area
   ==============================-->
-  <section class="vs-hero hero-layout1" data-wow-delay="0.25s" aria-hidden="true"
-    data-bg-src="assets/img/new_image/banner_img_hero.jpg">
-    <div class="container position-relative">
-      <div class="vs-carousel hero-slider1" data-fade="true" data-autoplay="true">
+  <section class="vs-hero hero-layout1">
 
-        <!-- Hero Slide 1 -->
-        <div class="hero-item">
+    <div class=" position-relative">
+
+      <!-- Slider -->
+      <div class="vs-carousel hero-slider1">
+
+        <!-- Slide 1 -->
+        <div class="hero-item" style="background-image: url('./assets/img/new_image/banner_img_04.webp');">
           <div class="row g-5 gx-50 align-items-center">
             <div class="col-xl-7 col-lg-10">
-              <!-- Hero content hidden -->
-
               <div class="hero-content">
-                <!-- <span class="hero-subtitle">Trusted Home Services at Your Doorstep</span> -->
-
-                <h1 class="hero-title">
-                  Find the Best Home Services
-                </h1>
-
+                <h1 class="hero-title">Find the Best Home Services</h1>
                 <p class="hero-text">
-                  Sridixitha connects you with reliable professionals for all your home needs — from cleaning and
-                  cooking to electrical, plumbing, and patient care services.
+                  Sridixitha connects you with reliable professionals for all your home needs.
                 </p>
-
-                <a class="vs-btn" href="index.html">
-                  Book a Service <i class="fa-regular fa-arrow-right"></i>
-                </a>
+                <a class="vs-btn" href="#">Book a Service</a>
               </div>
-
             </div>
           </div>
         </div>
 
-        <!-- Hero Slide 2 -->
-        <div class="hero-item">
+        <!-- Slide 2 -->
+        <div class="hero-item" style="background-image: url('./assets/img/new_image/banner_img_02.webp');">
           <div class="row g-5 gx-50 align-items-center">
             <div class="col-xl-7 col-lg-10">
-              <!-- Hero content hidden -->
-
               <div class="hero-content">
-                <!-- <span class="hero-subtitle">The Smart Way to Find Home Services...</span> -->
-
-                <h1 class="hero-title">
-                  We provide trusted Home Services
-                </h1>
-
+                <h1 class="hero-title">Trusted Home Services</h1>
                 <p class="hero-text">
-                  Your one-stop solution for all home needs. From cleaning and cooking to electrical, plumbing, and
-                  patient care services — all at your doorstep.
+                  From cleaning to plumbing — everything at your doorstep.
                 </p>
-
-                <a class="vs-btn" href="index.html">
-                  Book a Service <i class="fa-regular fa-arrow-right"></i>
-                </a>
+                <a class="vs-btn" href="#">Book Now</a>
               </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Slide 3 -->
+        <div class="hero-item" style="background-image: url('./assets/img/new_image/banner_img_01.webp');">
+          <div class="row g-5 gx-50 align-items-center">
+            <div class="col-xl-7 col-lg-10">
+              <div class="hero-content">
+                <h1 class="hero-title">Professional Experts</h1>
+                <p class="hero-text">
+                  Hire electricians, plumbers, and more instantly.
+                </p>
+                <a class="vs-btn" href="#">Explore</a>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
 
-      <!-- Slider Arrows -->
+      <!-- Navigation Arrows -->
+      <button class="hero-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button class="hero-next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
 
     </div>
 
-    <!-- Listing Area - Centered -->
+    <!-- Listing Area -->
     <div class="listing-style1">
       <div class="sub-container">
         <div class="listing-body">
-          <div class="row">
-            <div class="col-xl-12">
+          <form class="form-style2 search-horizontal">
 
-              <!-- NEW HORIZONTAL FORM -->
-              <form class="form-style2 search-horizontal">
-
-                <!-- WHAT -->
-                <div class="form-group">
-                  <label>What?</label>
-                  <div class="input-area">
-                    <i class="fa-regular fa-location-crosshairs"></i>
-                    <input type="text" placeholder="What are you looking for...">
-                  </div>
-                </div>
-
-                <!-- WHERE -->
-                <div class="form-group">
-                  <label>Where?</label>
-                  <div class="input-area">
-                    <i class="fa-regular fa-location-dot"></i>
-                    <input type="text" placeholder="Where...">
-                  </div>
-                </div>
-
-                <!-- CATEGORY -->
-                <div class="form-group">
-                  <label>Category</label>
-                  <select>
-                    <option>All Category</option>
-                    <option>Plumber</option>
-                    <option>Electrician</option>
-                  </select>
-                </div>
-
-                <!-- BUTTON -->
-                <div class="form-group btn-group">
-                  <button class="vs-btn" type="submit">
-                    Search <i class="fa-regular fa-arrow-right"></i>
-                  </button>
-                </div>
-
-              </form>
-
+            <div class="form-group">
+              <label>What?</label>
+              <input type="text" placeholder="What are you looking for...">
             </div>
-          </div>
+
+            <div class="form-group">
+              <label>Where?</label>
+              <input type="text" placeholder="Where...">
+            </div>
+
+            <div class="form-group">
+              <label>Category</label>
+              <select>
+                <option>All Category</option>
+                <option>Plumber</option>
+                <option>Electrician</option>
+              </select>
+            </div>
+
+            <div class="form-group btn-group">
+              <button class="vs-btn">Search</button>
+            </div>
+
+          </form>
         </div>
       </div>
     </div>
-    <!-- Listing Area End -->
 
   </section>
   <!--services section-->
-  <section class="svc-section">
+  <section class="svc-section" id="services" >
     <div class="svc-header">
       <h2>Explore our services</h2>
       <p>Everything you need, all in one place</p>
@@ -728,7 +714,7 @@
 
   <!-- category Area Start-->
 
-  <section class="cat-section">
+  <section class="cat-section" id="categories">
     <div class="sec-header">
       <div class="sec-left">
         <span class="sec-subtitle">Our Categories</span>
@@ -1094,6 +1080,177 @@
           <a class="hover-btn" href="#">Browse</a>
         </div>
       </div>
+      <!-- card 21 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/legal_services.webp" alt="Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/compliant.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">Legal Services</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 22 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/Nri_serv.webp" alt="Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/nri.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">NRI Services</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 23 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/life_insurance.webp" alt="Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/life-insurance.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">Life Insurance</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 24 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/general_in.webp" alt="Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/health-insurance.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">General Insurance</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 25 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/pest_control.webp" alt="Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/pesticide.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">Pest Control Service</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 26 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/cctv_insta.webp" alt="Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/cctv-camera.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">CCTV Installation</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 27 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/painting_servic.webp" alt="Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/house-painting.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">Painting Services</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 28 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/security_guard.webp" alt=" Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/security.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">Security Guards</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 29 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/packers_&_movers.webp " alt=" Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/shipping-truck.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">Packers & Movers</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+      <!-- card 30 -->
+      <div class="cat-card">
+        <!-- Background Image -->
+        <img class="card-img" src="assets/img/category_iocns/dj_sound.webp" alt=" Doctors Services" />
+        <div class="card-overlay"></div>
+        <!-- Default View -->
+        <div class="card-default">
+          <div class="card-icon">
+            <img src="assets/img/category_iocns/dj.png" width="82" height="82" alt="Doctors Icon">
+          </div>
+          <div class="card-default-title">DJ & Sound System</div>
+        </div>
+        <!-- Hover View -->
+        <div class="card-hover">
+          <a class="hover-btn" href="#">Browse</a>
+        </div>
+      </div>
+
     </div>
     <a href="#" class="viewall-btn">View All</a>
   </section>
@@ -1103,7 +1260,7 @@
     job postingarea 
 	============================== -->
 
-  <section class="jbs-section">
+  <section class="jbs-section" id="jobs">
     <div class="jbs-wrap">
 
       <div class="jbs-head">
@@ -1203,13 +1360,13 @@
   <!--==============================
     tesmonial area 
 	============================== -->
-  <section class="testi-layout1 space" style="background-image: url('assets/img/bg/test_bg.png');">
+  <section class="testi-layout1 space" id="Testimonials" style="background-image: url('assets/img/bg/test_bg.png');">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
           <div class="title-area text-center animation-style5 title-anime">
             <span class="tes-sec-subtitle">Testimonials</span>
-            <h2 class="sec-title title-anime__title text-white">What Our Clients Say</h2>
+            <h2 class="sec-title title-anime__title" style="color: #f9ba53;">What Our Clients Say</h2>
           </div>
         </div>
       </div>
@@ -1338,12 +1495,13 @@
                 domestic help,
                 caregivers, and professional services. We connect people with the right opportunities
                 and deliver reliable support for homes and businesses.</p>
-              <!-- <div class="newsletter-form">
-                <div class="search-btn">
-                  <input class="form-control" type="email" placeholder="Your Email Address">
-                  <button type="submit" class="vs-btn"><i class="fa-solid fa-paper-plane"></i> Subscribe</button>
-                </div>
-              </div> -->
+              <div class="footer-social-media">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+               
+              </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-6 col-xl-auto">
@@ -1378,13 +1536,12 @@
               <h3 class="widget_title"> Need Help?<span class="title-shape"><img
                     src="assets/img/shapes/footer-line-shape.svg" alt="Shape Image"></span></h3>
               <ul class="menu footer-menu">
-                <li><a href="#"><i style="color: #074c7d;" class="fa-solid fa-location-dot"></i> Hyderabad</a></li>
-                <li><a href="#"><i style="color: #074c7d;" class="fa-solid fa-phone"></i> +91 9966286721</a></li>
-                <li><a href="#"><i style="color: #074c7d;" class="fa-solid fa-envelope"></i> support@sridixitha.com</a>
+                <li><a href="#"><i style="color: #ea6e12" class="fa-solid fa-location-dot"></i>Hyderabad</a></li>
+                <li><a href="#"><i style="color: #ea6e12" class="fa-solid fa-phone"></i>+91 9966286721</a></li>
+                <li><a href="#"><i style="color: #ea6e12" class="fa-solid fa-envelope"></i>support@sridixitha.com</a>
+                <li><a href="#"><i style="color: #ea6e12" class="fa-brands fa-square-whatsapp"></i>+91 9292657671</a>
                 </li>
-                <!-- <li><a href="#"><i class="far fa-angle-right"></i> Questions & Answar</a></li>
-                <li><a href="#"><i class="far fa-angle-right"></i> Trips</a></li>
-                <li><a href="#"><i class="far fa-angle-right"></i> Contact Us</a></li> -->
+
               </ul>
             </div>
           </div>

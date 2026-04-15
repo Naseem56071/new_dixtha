@@ -1025,3 +1025,10 @@ window.addEventListener("load", function () {
 
 
 
+$('.hero-prev').click(function(){
+  $('.hero-slider1').slick('slickPrev');
+});
+
+$('.hero-next').click(function(){
+  $('.hero-slider1').slick('slickNext');
+});
