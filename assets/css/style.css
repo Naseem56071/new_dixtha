@@ -7022,7 +7022,7 @@ a.text-theme:hover,
   }
 
   .header-links li {
-    padding-right: 15px;
+    padding-right: 7px;
     margin-right: 10px;
   }
 
@@ -17183,7 +17183,7 @@ span.select2-selection.select2-selection--single:focus {
   z-index: 10;
   width: 45px;
   height: 45px;
-  border-radius: 47% 53% 47% 53% / 52% 54% 46% 48% ;
+  border-radius: 47% 53% 47% 53% / 52% 54% 46% 48%;
   border: none;
   background: #fff;
   cursor: pointer;
@@ -17436,10 +17436,10 @@ span.select2-selection.select2-selection--single:focus {
   overflow: hidden;
   cursor: pointer;
   background: #0b1e34;
-border-top: 2px solid var(--theme-color);
-border-right: 2px solid var(--theme-color);
-border-bottom: 2px solid var(--secondary-color);
-border-left: 2px solid var(--secondary-color);
+  border-top: 2px solid var(--theme-color);
+  border-right: 2px solid var(--theme-color);
+  border-bottom: 2px solid var(--secondary-color);
+  border-left: 2px solid var(--secondary-color);
   transition: 0.35s;
 }
 
@@ -18562,6 +18562,7 @@ a.viewall-btn:hover {
   padding: 10px 0;
   position: relative;
 }
+
 .news-track:hover {
   animation-play-state: paused;
   cursor: pointer;
@@ -18584,6 +18585,7 @@ a.viewall-btn:hover {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -18592,13 +18594,180 @@ a.viewall-btn:hover {
 .diamond {
   width: 50px;
   height: 50px;
-  background:var(--theme-color);
+  background: var(--theme-color);
   transform: rotate(45deg);
   border-radius: 3px;
   animation: blink 1s infinite;
 }
 
-.diamond i{
+.diamond i {
   color: #fff;
   transform: rotate(140deg);
+}
+
+
+/* =========================
+   CARD CONTAINER
+========================= */
+.vs-listing.listing-style2 {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(35, 90, 146, 0.35) 0px -2px 6px 0px inset;
+  ;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.vs-listing.listing-style2:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   IMAGE SECTION
+========================= */
+.vs-listing.listing-style2 .listing-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.vs-listing.listing-style2 .listing-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Image Zoom on Hover */
+.vs-listing.listing-style2:hover .listing-img img {
+  transform: scale(1.1);
+}
+
+/* Gradient Overlay */
+.vs-listing.listing-style2 .listing-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.vs-listing.listing-style2:hover .listing-img::after {
+  opacity: 1;
+}
+
+/* =========================
+   FLOATING CATEGORY BADGE
+========================= */
+.vs-listing.listing-style2 .tags {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(-27deg, #2383cb, #ff6b00);
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transition: 0.3s;
+}
+
+/* Badge Hover */
+.vs-listing.listing-style2:hover .tags {
+  transform: scale(1.08);
+}
+
+/* Badge Icon */
+.vs-listing.listing-style2 .tags img {
+  width: 14px;
+  height: 14px;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+.vs-listing.listing-style2 .listing-content {
+  padding: 10px;
+}
+
+/* Title */
+.vs-listing.listing-style2 .listing-title a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e96b0d;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.vs-listing.listing-style2 .listing-title a:hover {
+  color: #ff4d4d;
+}
+
+/* Description */
+.vs-listing.listing-style2 .listing-text {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   LIST STYLE
+========================= */
+.vs-listing.listing-style2 .list-style1 ul {
+  padding: 0;
+  margin: 0;
+}
+
+.vs-listing.listing-style2 .list-style1 ul li {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.vs-listing.listing-style2 .list-style1 ul li img {
+  width: 14px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.vs-listing.listing-style2 .vs-btn {
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #074c7d, #429eca);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.vs-listing.listing-style2 .vs-btn:hover {
+  background: linear-gradient(45deg, #222, #444);
+}
+
+/* =========================
+   EXTRA: SMOOTH TRANSITIONS
+========================= */
+.vs-listing.listing-style2 * {
+  transition: all 0.3s ease;
+}
+
+
+.social-media-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 24px; */
 }
