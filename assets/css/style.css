@@ -17522,7 +17522,7 @@ border-left: 2px solid var(--secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(7, 76, 125, 0.20);
+  background: rgb(191 228 255 / 20%);
   border: 1.5px solid rgba(44, 111, 159, 0.4);
   transition: 0.3s;
 }
