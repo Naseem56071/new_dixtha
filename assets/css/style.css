@@ -7274,7 +7274,7 @@ a.text-theme:hover,
 
 .footer-layout1 .footer-top {
   padding-bottom: 35px;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .footer-layout1 .list-style1 {
@@ -7618,12 +7618,16 @@ a.text-theme:hover,
 
 @media (max-width: 767px) {
   .breadcumb-wrapper {
-    padding: 130px 0 50px;
+    padding: 30px 0 35px;
   }
 
   .breadcumb-wrapper .breadcumb-title {
-    font-size: 32px;
+    font-size: 25px;
   }
+  .breadcumb-menu span a {
+    font-size: 21px;
+  }
+
 }
 
 /* Medium devices */
@@ -11638,7 +11642,7 @@ blockquote.vs-quote .quote-author {
 @media (max-width: 991px) {
   .contact-layout1 .contact-form {
     transform: unset;
-    margin: 60px 0;
+    /* margin: 60px 0; */
   }
 
   .map-layout1 {
