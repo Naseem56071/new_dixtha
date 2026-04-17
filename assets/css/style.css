@@ -281,6 +281,7 @@ p {
   .svc-grid {
     grid-template-columns: 1fr;
   }
+
 }
 
 h1 a,
@@ -3088,6 +3089,7 @@ body::-webkit-scrollbar-thumb {
 
 .z-index-step1 {
   position: relative;
+ 
   z-index: 4 !important;
 }
 
@@ -7557,7 +7559,7 @@ a.text-theme:hover,
 }
 
 .breadcumb-menu-wrap {
-  text-align: left;
+  text-align: center;
 }
 
 .breadcumb-title {
@@ -7566,7 +7568,7 @@ a.text-theme:hover,
   font-size: 64px;
   line-height: 115%;
   margin-bottom: 5px;
-  text-align: left;
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -7607,6 +7609,7 @@ a.text-theme:hover,
   background-color: var(--title-color);
   position: relative;
   z-index: 1;
+ 
   /* Medium devices */
 }
 
@@ -18218,6 +18221,7 @@ span.select2-selection.select2-selection--single:focus {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
     border-color 0.25s, box-shadow 0.25s;
   animation: cardFadeUp 0.5s ease both;
@@ -18828,5 +18832,6 @@ a.viewall-btn:hover {
 
 
 section.contact-layout1.space-top {
-    padding: 60px 0px ;
+  padding: 60px 0px;
 }
+
