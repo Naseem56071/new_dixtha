@@ -1860,7 +1860,7 @@ textarea.is-invalid {
 .vs-mobile-menu ul li a:before {
   content: "\f061";
   font-family: var(--icon-font);
-  
+
   position: relative;
   left: 0;
   top: 0;
@@ -7624,6 +7624,7 @@ a.text-theme:hover,
   .breadcumb-wrapper .breadcumb-title {
     font-size: 25px;
   }
+
   .breadcumb-menu span a {
     font-size: 21px;
   }
@@ -11588,7 +11589,7 @@ blockquote.vs-quote .quote-author {
 
 .form-style1 .nice-select:hover {
   color: var(--text-color);
-  background-color:#ffffff ;
+  background-color: #ffffff;
 }
 
 .form-style1 .nice-select:hover::after {
@@ -11597,7 +11598,7 @@ blockquote.vs-quote .quote-author {
 
 .form-style1 .vs-btn {
   color: var(--white-color);
-  background-color:var(--theme-color);
+  background-color: var(--theme-color);
   width: 100%;
 }
 
@@ -11620,7 +11621,7 @@ blockquote.vs-quote .quote-author {
   padding: 110px;
   border-radius: 20px;
   transform: translateY(-15px);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .map-layout1 {
@@ -18772,10 +18773,10 @@ a.viewall-btn:hover {
 
 
 .social-media-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 24px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 24px; */
 }
 
 
@@ -18807,16 +18808,25 @@ a.viewall-btn:hover {
   margin-top: 8px;
   border-radius: 2px;
 }
+
 .b2b-content p {
   line-height: 1.7;
   font-size: 16px;
   word-spacing: 2px;
 }
-.b2b-image{
+
+.b2b-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .b2b-image img {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+section.contact-layout1.space-top {
+    padding: 60px 0px ;
 }
