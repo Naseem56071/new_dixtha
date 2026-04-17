@@ -1854,12 +1854,13 @@ textarea.is-invalid {
   line-height: 1;
   font-size: 16px;
   text-transform: capitalize;
-  color: var(--title-color);
+  color: var(--theme-color);
 }
 
 .vs-mobile-menu ul li a:before {
-  content: "\f105";
+  content: "\f061";
   font-family: var(--icon-font);
+  
   position: relative;
   left: 0;
   top: 0;
@@ -3714,7 +3715,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-title {
-  color: var(--title-color) !important;
+  color: var(--theme-color) !important;
 }
 
 .text-body {
@@ -11502,14 +11503,14 @@ blockquote.vs-quote .quote-author {
 .form-style1 label {
   font-size: 16px;
   font-weight: 500;
-  color: var(--title-color);
+  color: var(--theme-color);
 }
 
 .form-style1 textarea,
 .form-style1 input {
   font-size: 16px;
   height: 60px;
-  background-color: var(--body-color);
+  background-color: #c5c4c43b;
   border: none;
 }
 
@@ -11547,24 +11548,25 @@ blockquote.vs-quote .quote-author {
 
 .form-style1 .form-control {
   border-radius: 10px;
-  color: var(--text-color);
+  color: var(--black-color);
   padding: 0 30px 0 20px;
   font-size: 16px;
   font-weight: 500;
 }
 
 .form-style1 .form-control:focus {
-  background-color: var(--body-color);
+  background-color: var(--white-color);
+  border: 2px solid var(--secondary-color);
 }
 
 .form-style1 .form-control::placeholder {
-  color: var(--text-color);
+  color: var(--black-color);
 }
 
 .form-style1 .nice-select {
-  background-color: var(--body-color);
+  background-color: var(--white-color);
   border: none;
-  color: var(--text-color);
+  color: var(--black-color);
   font-size: 16px;
   font-family: var(--body-font);
   height: 60px;
@@ -11582,26 +11584,26 @@ blockquote.vs-quote .quote-author {
 
 .form-style1 .nice-select:hover {
   color: var(--text-color);
-  background-color: var(--body-color);
+  background-color:#ffffff ;
 }
 
 .form-style1 .nice-select:hover::after {
-  border-color: var(--theme-color);
+  border-color: #ffffff;
 }
 
 .form-style1 .vs-btn {
-  color: var(--title-color);
-  background-color: var(--body-color);
+  color: var(--white-color);
+  background-color:var(--theme-color);
   width: 100%;
 }
 
 .form-style1 .vs-btn::after,
 .form-style1 .vs-btn::before {
-  background-color: var(--theme-color);
+  background-color: var(--secondary-color);
 }
 
 .form-style1 .vs-btn:hover {
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .contact-layout1 {
@@ -11611,10 +11613,10 @@ blockquote.vs-quote .quote-author {
 
 .contact-form {
   background-color: var(--white-color);
-  padding: 60px;
+  padding: 110px;
   border-radius: 20px;
-  transform: translateY(80px);
-  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.17);
+  transform: translateY(-15px);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .map-layout1 {
