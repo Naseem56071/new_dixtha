@@ -10796,6 +10796,7 @@ blockquote.vs-quote .quote-author {
 }
 
 .vs-testi .testi-service {
+  color: var(--secondary-color);
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
@@ -10823,7 +10824,7 @@ blockquote.vs-quote .quote-author {
 }
 
 .vs-testi .testi-title a {
-  color: var(--title-color);
+  color: var(--theme-color);
 }
 
 .vs-testi .testi-title a:hover {
